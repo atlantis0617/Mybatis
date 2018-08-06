@@ -28,5 +28,8 @@
         <mapper resource="com/www/yhy/mapping/userMapper.xml"/>
        <!-- 注册UserMapper映射接口-->
   		<mapper class="com.www.yhy.mapping.UserMapperI"/>
+  		<!-- 注册orderMapper.xml文件， 
+        orderMapper.xml位于me.gacl.mapping这个包下，所以resource写成me/gacl/mapping/orderMapper.xml-->
+        <mapper resource="com/www/yhy/mapping/orderMapper.xml"/>
  	</mappers>
 </configuration>

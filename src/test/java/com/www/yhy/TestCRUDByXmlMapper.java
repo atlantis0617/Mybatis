@@ -10,7 +10,7 @@ import com.www.yhy.util.MyBatisUtil;
 
 public class TestCRUDByXmlMapper {
 	
-	 @Test
+	    @Test
 	    public void testAdd(){
 	        //SqlSession sqlSession = MyBatisUtil.getSqlSession(false);
 	        SqlSession sqlSession = MyBatisUtil.getSqlSession(true);
