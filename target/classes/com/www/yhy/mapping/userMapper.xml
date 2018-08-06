@@ -16,4 +16,20 @@
         resultType="com.www.yhy.domain.User">
         select * from users where id=#{id}
     </select>
+    <!-- 创建用户(Create) -->
+    <insert id="addUser" parameterType="com.www.yhy.domain.User">
+        insert into users(name,age) values(#{name},#{age})
+    </insert>
+    <!-- 删除用户(Remove) -->
+    <delete id="deleteUser" parameterType="int">
+        delete from users where id=#{id}
+    </delete>
+    <!-- 修改用户(Update) -->
+    <update id="updateUser" parameterType="com.www.yhy.domain.User">
+        update users set name=#{name},age=#{age} where id=#{id}
+    </update>
+    <!-- 查询全部用户-->
+    <select id="getAllUsers" resultType="com.www.yhy.domain.User">
+        select * from users
+    </select>
 </mapper>
