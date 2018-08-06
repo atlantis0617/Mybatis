@@ -19,7 +19,7 @@ public class TestCRUDByXmlMapper {
 	         * me.gacl.mapping.userMapper是userMapper.xml文件中mapper标签的namespace属性的值，
 	         * addUser是insert标签的id属性值，通过insert标签的id属性值就可以找到要执行的SQL
 	         */
-	        String statement = "com.www.yhy.mapping.userMapper.addUser";//映射sql的标识字符串
+	        String statement = "com.www.yhy.mapping.userMapper.addUser2";//映射sql的标识字符串
 	        User user = new User();
 	        user.setName("用户孤傲苍狼");
 	        user.setAge(20);

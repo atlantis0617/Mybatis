@@ -20,6 +20,9 @@
     <insert id="addUser" parameterType="com.www.yhy.domain.User">
         insert into users(name,age) values(#{name},#{age})
     </insert>
+    <insert id="addUser2" parameterType="_User">
+        insert into users(name,age) values(#{name},#{age})
+    </insert>
     <!-- 删除用户(Remove) -->
     <delete id="deleteUser" parameterType="int">
         delete from users where id=#{id}
